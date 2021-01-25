@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">ariellemueller_COMP304Lab2</string>
+    <string name="enter_button_main">Enter</string>
+    <string name="main_page_logo_desc">main page logo</string>
+    <string name="apartments_menu_option">Apartments</string>
+    <string name="condominiums_menu_option">Condominiums</string>
+    <string name="detached_homes_menu_option">Detached Homes</string>
+    <string name="semi_detached_homes_menu_option">Semi-Detached Homes</string>
+    <string name="town_houses_menu_option">Town Houses</string>
+    <string name="string_town_houses_menu_option" />
+    <string name="town_houses_menu">Town Houses</string>
+    <string name="apartment_activity_title">Apartments Available:</string>
+    <string name="check_out_title">Check Out</string>
+    <string name="home_selection_page">Home Selection Page</string>
+    <string name="final_order">Final Order</string>
+    <string name="detached_homes_available">Detached Homes Available:</string>
+    <string name="condominums_available">Condominums Available:</string>
+    <string name="payment_acitivity">Payment Acitivity</string>
+    <string name="semi_detached_homes_available">Semi-Detached Homes Available:</string>
+    <string name="town_houses_available">Town Houses Available:</string>
+    <string name="check_out">Check Out</string>
+    <string name="check_out_button_desc">Use the Options Menu Control to view available homes to rent. When you are satisfied with your selections, return to this menu and select the check out button to proceed.</string>
+    <string name="name_label">Name:</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="debit_credit_label">Debit/Credit:</string>
+    <string name="card_number_hint">Card Number</string>
+    <string name="your_favourite_game">Your Favourite Game</string>
+    <string name="customer_information">Customer Information:</string>
+    <string name="biggest_fear_label">Biggest Fear:</string>
+    <string name="your_hobby_hint">Your Hobby</string>
+    <string name="hobby_label">Hobby:</string>
+    <string name="best_game_label">Best Game:</string>
+    <string name="enter_your_biggest_fear_hint">Enter Your Biggest Fear</string>
+</resources>
