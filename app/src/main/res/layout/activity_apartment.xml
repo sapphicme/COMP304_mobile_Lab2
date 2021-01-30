@@ -21,15 +21,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableEnd="@mipmap/apartment_one"
-        android:onClick="onCheckboxClickedApartment"
-        android:text="@string/apartment_1" />
+        android:text="@string/apartment_1"/>
 
     <CheckBox
         android:id="@+id/apartment_two_check"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/apartment_2_check"
-        android:drawableEnd="@mipmap/apartment_two"
-        android:onClick="onCheckboxClickedApartment"/>
+        android:drawableEnd="@mipmap/apartment_two"/>
 
 </LinearLayout>

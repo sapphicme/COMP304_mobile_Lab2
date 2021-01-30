@@ -1,20 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".CheckOutActivity">
 
     <TextView
         android:id="@+id/checkOutMenuTitle"
-        android:layout_width="wrap_content"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="@string/check_out_title"
         android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioApartmentOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/apartment_one"
+            android:text="Apartment 1:"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/radioApartmentTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/apartment_two"
+            android:text="Apartment 2:"
+            android:visibility="gone"
+            />
+
+        <RadioButton
+            android:id="@+id/radioCondoOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/condo_one"
+            android:text="Condo 1:"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/radioCondoTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/condo_two"
+            android:text="Condo 2:"
+            android:visibility="gone"
+            />
+
+        <RadioButton
+            android:id="@+id/radioDetachedOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/detached_one"
+            android:text="Detached 1:"
+            android:visibility="gone"
+            />
+
+        <RadioButton
+            android:id="@+id/radioDetachedTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/detached_two"
+            android:text="Detached 2:"
+            android:visibility="gone"
+            />
+
+        <RadioButton
+            android:id="@+id/radioSemiOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/semidetached_one"
+            android:text="Semi-Detached 1:"
+            android:visibility="gone"
+            />
+
+        <RadioButton
+            android:id="@+id/radioSemiTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/semidetached_two"
+            android:text="Semi-Detached 2:"
+            android:visibility="gone"
+            />
+
+        <RadioButton
+            android:id="@+id/radioTownHouseOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/townhouse_one"
+            android:text="Town House 1:"
+            android:visibility="gone"
+            />
+
+        <RadioButton
+            android:id="@+id/radioTownHouseTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/townhouse_two"
+            android:text="Town House 2:"
+            android:visibility="gone"
+            />
+
+    </RadioGroup>
+
+</LinearLayout>
