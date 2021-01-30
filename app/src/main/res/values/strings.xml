@@ -31,4 +31,14 @@
     <string name="hobby_label">Hobby:</string>
     <string name="best_game_label">Best Game:</string>
     <string name="enter_your_biggest_fear_hint">Enter Your Biggest Fear</string>
+    <string name="apartment_1">Apartment 1:</string>
+    <string name="apartment_2_check">Apartment 2:</string>
+    <string name="condo_1">Condo 1:</string>
+    <string name="condo_2">Condo 2:</string>
+    <string name="town_house_1">Town House 1:</string>
+    <string name="town_house_2">Town House 2:</string>
+    <string name="detached_home_1">Detached Home 1:</string>
+    <string name="detached_home_2">Detached Home 2:</string>
+    <string name="semi_detached_home_1">Semi-Detached Home 1:</string>
+    <string name="semi_detached_home_2">Semi-Detached Home 2:</string>
 </resources>

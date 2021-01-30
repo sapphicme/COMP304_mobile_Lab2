@@ -14,4 +14,20 @@
         android:text="@string/condominums_available"
         android:textSize="24sp"
         android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/condo_one_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@mipmap/condo_one"
+        android:onClick="onCheckboxClickedCondo"
+        android:text="@string/condo_1" />
+
+    <CheckBox
+        android:id="@+id/condo_two_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@mipmap/condo_two"
+        android:onClick="onCheckboxClickedCondo"
+        android:text="@string/condo_2" />
 </LinearLayout>
