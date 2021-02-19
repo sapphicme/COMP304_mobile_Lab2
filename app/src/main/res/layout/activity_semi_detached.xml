@@ -22,7 +22,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableEnd="@mipmap/semidetached_one"
-        android:onClick="onCheckboxClickedSemi"
         android:text="@string/semi_detached_home_1" />
 
     <CheckBox
@@ -30,8 +29,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableEnd="@mipmap/semidetached_two"
-        android:onClick="onCheckboxClickedSemi"
         android:text="@string/semi_detached_home_2" />
 
+    <Button
+        android:id="@+id/save_checked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="saveCheck"
+        android:text="@string/add_to_checkout"/>
+
+    <Button
+        android:id="@+id/checkout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="checkoutPageOpen"
+        android:text="@string/proceed_to_checkout"/>
 
 </LinearLayout>

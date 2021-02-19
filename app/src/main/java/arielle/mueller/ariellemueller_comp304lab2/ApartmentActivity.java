@@ -24,6 +24,7 @@ public class ApartmentActivity extends AppCompatActivity {
         final RadioButton radioOne = (RadioButton) findViewById(radioApartmentOne);
 
 
+
         if(checkBoxOne.isChecked()){
             radioOne.setVisibility(View.VISIBLE);
         }

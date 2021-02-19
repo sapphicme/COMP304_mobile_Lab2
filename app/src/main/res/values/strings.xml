@@ -41,4 +41,6 @@
     <string name="detached_home_2">Detached Home 2:</string>
     <string name="semi_detached_home_1">Semi-Detached Home 1:</string>
     <string name="semi_detached_home_2">Semi-Detached Home 2:</string>
+    <string name="add_to_checkout">Add to checkout</string>
+    <string name="proceed_to_checkout">Proceed to Checkout</string>
 </resources>

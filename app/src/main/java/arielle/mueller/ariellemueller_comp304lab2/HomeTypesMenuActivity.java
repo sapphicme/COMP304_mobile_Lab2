@@ -40,25 +40,26 @@ public class HomeTypesMenuActivity extends AppCompatActivity {
             case apartment_option:
                 Intent intent1 = new Intent(this, ApartmentActivity.class);
                 startActivity(intent1);
-                return true;
+                break;
             case condo_option:
                 Intent intent2 = new Intent(this, CondoActivity.class);
                 startActivity(intent2);
-                return true;
+                break;
             case detached_options:
                 Intent intent3 = new Intent(this, DetachedHomeActivity.class);
                 startActivity(intent3);
-                return true;
+                break;
             case semi_options:
                 Intent intent4 = new Intent(this, SemiDetachedActivity.class);
                 startActivity(intent4);
-                return true;
+                break;
             case R.id.townhouse_option:
                 Intent intent5 = new Intent(this, TownHouseActivity.class);
                 startActivity(intent5);
-                return true;
+                break;
             default:
                 return super.onOptionsItemSelected(item);
         }
+        return true;
     }
 }
