@@ -21,13 +21,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableEnd="@mipmap/apartment_one"
-        android:text="@string/apartment_1"/>
+        android:text="@string/apartment1"/>
 
     <CheckBox
         android:id="@+id/apartment_two_check"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/apartment_2_check"
+        android:text="@string/apartment2"
         android:drawableEnd="@mipmap/apartment_two"/>
 
 

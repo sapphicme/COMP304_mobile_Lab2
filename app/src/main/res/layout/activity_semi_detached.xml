@@ -22,14 +22,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableEnd="@mipmap/semidetached_one"
-        android:text="@string/semi_detached_home_1" />
+        android:text="@string/semi1" />
 
     <CheckBox
         android:id="@+id/semidetached_two_check"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableEnd="@mipmap/semidetached_two"
-        android:text="@string/semi_detached_home_2" />
+        android:text="@string/semi2" />
 
     <Button
         android:id="@+id/save_checked"

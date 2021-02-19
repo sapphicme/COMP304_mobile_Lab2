@@ -38,8 +38,8 @@ CheckBox apartment1checkbox, apartment2checkbox;
             SharedPreferences.Editor prefEditor = myPreference.edit();
             boolean apartment1state = apartment1checkbox.isChecked();
             boolean apartment2state = apartment2checkbox.isChecked();
-            prefEditor.putBoolean("condo1state", apartment1state);
-            prefEditor.putBoolean("condo2state", apartment2state);
+            prefEditor.putBoolean("apartment1state", apartment1state);
+            prefEditor.putBoolean("apartment2state", apartment2state);
             prefEditor.commit();
             Toast.makeText(this, "added to checkout", Toast.LENGTH_SHORT).show();
 

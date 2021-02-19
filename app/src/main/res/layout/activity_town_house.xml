@@ -22,14 +22,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableEnd="@mipmap/townhouse_one"
-        android:text="@string/town_house_1" />
+        android:text="@string/town1" />
 
     <CheckBox
         android:id="@+id/townhouse_two_check"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableEnd="@mipmap/townhouse_two"
-        android:text="@string/town_house_2" />
+        android:text="@string/town2" />
 
 
     <Button

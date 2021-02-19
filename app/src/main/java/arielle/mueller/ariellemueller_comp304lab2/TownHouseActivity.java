@@ -35,8 +35,8 @@ public class TownHouseActivity extends AppCompatActivity {
         SharedPreferences.Editor prefEditor = myPreference.edit();
         boolean town1state = town1checkbox.isChecked();
         boolean town2state = town2checkbox.isChecked();
-        prefEditor.putBoolean("condo1state", town1state);
-        prefEditor.putBoolean("condo2state", town2state);
+        prefEditor.putBoolean("town1state", town1state);
+        prefEditor.putBoolean("town2state", town2state);
         prefEditor.commit();
         Toast.makeText(this, "added to checkout", Toast.LENGTH_SHORT).show();
 

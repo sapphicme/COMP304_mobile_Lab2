@@ -20,14 +20,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableEnd="@mipmap/detached_one"
-        android:text="@string/detached_home_1" />
+        android:text="@string/detached1" />
 
     <CheckBox
         android:id="@+id/detached_two_check"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableEnd="@mipmap/detached_two"
-        android:text="@string/detached_home_2" />
+        android:text="@string/detached2" />
 
     <Button
         android:id="@+id/save_checked"
