@@ -33,7 +33,7 @@ public class DetachedHomeActivity extends AppCompatActivity {
         SharedPreferences myPreference = getSharedPreferences("info", 0);
         SharedPreferences.Editor prefEditor = myPreference.edit();
         boolean det1state = det1checkbox.isChecked();
-        boolean det2state = det1checkbox.isChecked();
+        boolean det2state = det2checkbox.isChecked();
         prefEditor.putBoolean("det1state", det1state);
         prefEditor.putBoolean("det2state", det2state);
         prefEditor.commit();

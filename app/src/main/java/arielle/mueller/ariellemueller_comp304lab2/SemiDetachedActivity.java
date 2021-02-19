@@ -33,7 +33,7 @@ public class SemiDetachedActivity extends AppCompatActivity {
         SharedPreferences myPreference = getSharedPreferences("info", 0);
         SharedPreferences.Editor prefEditor = myPreference.edit();
         boolean semidet1state = semidet1checkbox.isChecked();
-        boolean semidet2state = semidet1checkbox.isChecked();
+        boolean semidet2state = semidet2checkbox.isChecked();
         prefEditor.putBoolean("semidet1state", semidet1state);
         prefEditor.putBoolean("semidet2state", semidet2state);
         prefEditor.commit();

@@ -30,4 +30,20 @@
         android:text="@string/apartment_2_check"
         android:drawableEnd="@mipmap/apartment_two"/>
 
+
+    <Button
+        android:id="@+id/save_checked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="saveCheck"
+        android:text="@string/add_to_checkout"/>
+
+    <Button
+        android:id="@+id/checkout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="checkoutPageOpen"
+        android:text="@string/proceed_to_checkout"/>
+
+
 </LinearLayout>

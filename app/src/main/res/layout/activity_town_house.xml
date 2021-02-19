@@ -22,7 +22,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableEnd="@mipmap/townhouse_one"
-        android:onClick="onCheckboxClickedTown"
         android:text="@string/town_house_1" />
 
     <CheckBox
@@ -30,6 +29,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableEnd="@mipmap/townhouse_two"
-        android:onClick="onCheckboxClickedTown"
         android:text="@string/town_house_2" />
+
+
+    <Button
+        android:id="@+id/save_checked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="saveCheck"
+        android:text="@string/add_to_checkout"/>
+
+    <Button
+        android:id="@+id/checkout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="checkoutPageOpen"
+        android:text="@string/proceed_to_checkout"/>
+
 </LinearLayout>
