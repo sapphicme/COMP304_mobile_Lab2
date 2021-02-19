@@ -19,7 +19,6 @@ import static arielle.mueller.ariellemueller_comp304lab2.R.id.apartment_option;
 import static arielle.mueller.ariellemueller_comp304lab2.R.id.apartment_two_check;
 import static arielle.mueller.ariellemueller_comp304lab2.R.id.condo_option;
 import static arielle.mueller.ariellemueller_comp304lab2.R.id.detached_options;
-import static arielle.mueller.ariellemueller_comp304lab2.R.id.radioApartmentOne;
 import static arielle.mueller.ariellemueller_comp304lab2.R.id.semi_options;
 
 public class ApartmentActivity extends AppCompatActivity {
