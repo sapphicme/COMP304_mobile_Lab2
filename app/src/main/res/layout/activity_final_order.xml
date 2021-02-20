@@ -5,153 +5,160 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FinalOrderActivity">
-
     <TextView
-        android:id="@+id/final_order_title"
+        android:id="@+id/title_user_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="16dp"
-        android:text="@string/final_order"
-        android:textColor="#000000"
-        android:textSize="24sp"
+        android:text="Enter your information"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/finalName"
+        android:id="@+id/full_name_field"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_user_info" />
+
+    <Button
+        android:id="@+id/send_order_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="64dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/enter_full_name"
-        android:inputType="textPersonName"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="400dp"
+        android:onClick="send_order_click"
+        android:text="Send order"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/full_name_field"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/textView_chosen_home"
+        android:layout_width="333dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="60dp"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
-        android:text="@string/name_label"
-        android:textColor="#000000"
-        android:textSize="18sp"
+        android:id="@+id/textView_payment_type"
+        android:layout_width="343dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="345dp"
+        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/final_order_title" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/debit_credit_label"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/cardNumber"
+        android:id="@+id/card_number"
+        android:layout_width="337dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Card number"
+        android:inputType="number"
+        android:maxLength="16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_payment_type" />
+
+    <TextView
+        android:id="@+id/exp_date_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/card_number_hint"
-        android:inputType="number"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/finalName" />
+        android:layout_marginTop="31dp"
 
-    <EditText
-        android:id="@+id/favouriteGameEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:ems="10"
-        android:hint="@string/your_favourite_game"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toEndOf="@+id/bestGameLabel"
-        app:layout_constraintTop_toBottomOf="@+id/fearEditText"
-        android:autofillHints="" />
-
-    <TextView
-        android:id="@+id/fearLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="108dp"
-        android:text="@string/biggest_fear_label"
-        android:textColor="#000000"
-        android:textSize="18sp"
+        android:text="Expiry date (MMYY)"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/card_number" />
 
     <EditText
-        android:id="@+id/fearEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/exp_date_field"
+        android:layout_width="72dp"
+        android:layout_height="45dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="23dp"
         android:ems="10"
-        android:hint="@string/enter_your_biggest_fear_hint"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toEndOf="@+id/fearLabel"
-        app:layout_constraintTop_toBottomOf="@+id/cardNumber"
-        android:autofillHints="" />
-
-    <TextView
-        android:id="@+id/bestGameLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/best_game_label"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fearLabel" />
-
-    <TextView
-        android:id="@+id/hobbyLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/hobby_label"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bestGameLabel" />
+        android:inputType="number"
+        android:maxLength="4"
+        app:layout_constraintStart_toEndOf="@+id/exp_date_label"
+        app:layout_constraintTop_toBottomOf="@+id/card_number" />
 
     <EditText
-        android:id="@+id/hobbyEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
+        android:id="@+id/cvv_field"
+        android:layout_width="83dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="@string/your_hobby_hint"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toEndOf="@+id/hobbyLabel"
-        app:layout_constraintTop_toBottomOf="@+id/favouriteGameEditText"
-        android:autofillHints="" />
+        android:inputType="number"
+        android:maxLength="3"
+        app:layout_constraintStart_toEndOf="@+id/cvv_label"
+        app:layout_constraintTop_toBottomOf="@+id/card_number" />
 
     <TextView
-        android:id="@+id/customerInfoLabel"
+        android:id="@+id/cvv_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="56dp"
-        android:text="@string/customer_information"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:text="CVV"
+        app:layout_constraintStart_toEndOf="@+id/exp_date_field"
+        app:layout_constraintTop_toBottomOf="@+id/card_number" />
+
+    <EditText
+        android:id="@+id/address_field"
+        android:layout_width="337dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Address for invoice"
+        android:inputType="textPersonName"
+        android:maxLength="50"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/full_name_field" />
+
+    <EditText
+        android:id="@+id/email_field"
+        android:layout_width="336dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Email address"
+        android:inputType="textEmailAddress"
+        android:maxLength="50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_field" />
+
+    <EditText
+        android:id="@+id/phone_field"
+        android:layout_width="333dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:maxLength="10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_field" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
